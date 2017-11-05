@@ -90,6 +90,23 @@ imports: [
       }]
   [value]:number current value
 ```
+##Example
+to run the example follow these steps
+```
+git clone https://github.com/irra-b/ng4-gauge-component
+
+enter the directory where ng4-gauge-component is located
+
+npm install
+
+After the installation, execute the command
+
+ng serve
+
+open your web browser and access http: // localhost: 4200 /
+
+
+```
 License
 
 MIT
