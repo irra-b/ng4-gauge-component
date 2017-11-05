@@ -1,0 +1,23 @@
+{
+  "name": "ng4-gauge-component",
+  "version": "1.0.2",
+  "description": "angular 4 gauge component",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irra-b/ng4-gauge-component.git"
+  },
+  "keywords": [
+    "angular4",
+    "gauge"
+  ],
+  "author": "irra_b",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irra-b/ng4-gauge-component/issues"
+  },
+  "homepage": "https://github.com/irra-b/ng4-gauge-component#readme"
+}
