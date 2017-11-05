@@ -1,27 +1,95 @@
-# Tester
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
+# ng4-gauge-component  
+![Alt text](http://bitbox.click/capture.gif?raw=true "capture")
 
-## Development server
+## Install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+*npm install ng4-gauge-component --save*
 
-## Code scaffolding
+## Configurations
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+In .angular-cli.json in scripts section add "../node_modules/ng4-gauge-component/steelseries-min.js" and "../node_modules/ng4-gauge-component/tween.js"
+```
+"scripts": [
+        "../node_modules/ng4-gauge-component/steelseries-min.js",
+        "../node_modules/ng4-gauge-component/tween.js"
+]
+```
+## Using:
 
-## Build
+in your app module add GaugeModule in import section:
+```
+import { GaugeModule } from 'ng4-gauge-component/gauge/gauge.module';
+...
+imports: [
+...
+    GaugeModule
+ ],
+```
+##Template:
+```
+<app-gauge
+  title="Ventas"
+  unit="$us"
+  [uid]="'uid'"
+  min="0"
+  max="100"
+  pointer_color="red"
+  pointer_type="type9"
+  threshold="50"
+  led_color="green"
+  [led_color_visible]="true"
+  type="type4"
+  [sections]="sections"
+  [areas]="areas"
+  [value]="55">
+</app-gauge>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+<app-gauge
+  title="Ventas"
+  unit="$us"
+  [uid]="'uid2'"
+  min="0"
+  max="100"
+  pointer_color="red"
+  pointer_type="type9"
+  threshold="70"
+  led_color="green"
+  [led_color_visible]="true"
+  type="type4"
+  [sections]="sections"
+  [areas]="areas"
+  [value]="95">
+</app-gauge>
+```
 
-## Running unit tests
+##Input:
+```
+  title:string title of gauge
+  unit:string Unit of gauge
+  [uid]:string unique id of gauge
+  min:number min value of gauge
+  max:number mas value of gauge
+  pointer_color:string 'red'|'green'|'blue'|'orange'|'yellow'|'cyan'|'magenta'|'white'|'gray'|'black'|'raith'
+  pointer_type:string 'type1'|'type2'|'type3'|'type4'|'type5'|'type6'|'type7'|'type8'|'type9'|'type10'|'type11'|'type12'|'type13'|'type14'|'type15'|'type16'|
+  threshold:number limit value for flashing led
+  led_color_visible:boolean show flashing led
+  led_color:string 'red'|'green'|'blue'|'orange'|'yellow'|'cyan'|'magenta'
+  type:string 'type1'|'type2'|'type3'|'type4'
+  [sections]:any array objects
+      [{
+        start: 0,                     //start of section
+        end: 25,                      //end of section
+        color: 'rgba(255, 0, 0, 0.5)' //color of section
+      }]
+  [areas]:any array objects
+      [{
+         start: 0,                     //start of area
+         end: 25,                      //end of area
+         color: 'rgba(255, 0, 0, 0.3)' //color of area
+      }]
+  [value]:number current value
+```
+License
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+MIT
