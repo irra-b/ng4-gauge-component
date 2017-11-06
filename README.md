@@ -91,6 +91,8 @@ imports: [
   [value]:number current value
 ```
 ##Example
+
+demo example (http://ng4gauge.bitbox.click/)
 to run the example follow these steps
 ```
 git clone https://github.com/irra-b/ng4-gauge-component

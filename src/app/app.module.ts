@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { GaugeModule } from 'ng4-gauge-component/gauge/gauge.module';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule, GaugeModule
+    BrowserModule, GaugeModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

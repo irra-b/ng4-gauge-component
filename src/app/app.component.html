@@ -12,9 +12,10 @@
   [led_color_visible]="true"
   [sections]="sections"
   [areas]="areas"
-  [value]="55">
+  [value]="val1">
 </app-gauge>
-
+<input type="number" [(ngModel)]="_val1">
+<button (click)="setval1()">set</button>
 <app-gauge
   title="Ventas"
   unit="$us"
@@ -29,5 +30,7 @@
   type="type4"
   [sections]="sections"
   [areas]="areas"
-  [value]="95">
+  [value]="val2">
 </app-gauge>
+<input type="number" min="0"  [(ngModel)]="_val2">
+<button (click)="setval2()">set</button>
