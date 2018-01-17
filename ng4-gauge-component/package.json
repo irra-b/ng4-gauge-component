@@ -1,6 +1,6 @@
 {
   "name": "ng4-gauge-component",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "angular 4 gauge component",
   "main": "index.ts",
   "scripts": {

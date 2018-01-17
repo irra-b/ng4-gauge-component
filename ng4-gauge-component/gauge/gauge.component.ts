@@ -14,6 +14,7 @@ export class GaugeComponent implements OnInit, AfterViewInit, OnChanges {
   @Input('type') type: string='type1';
   @Input('min') min: number=0;
   @Input('max') max: number=100;
+  @Input('size') size: number=200;
   @Input('pointer_type') pointer_type: string='type1';
   @Input('pointer_color') pointer_color: string='red';
   @Input('threshold') threshold:number=50;
@@ -110,6 +111,7 @@ export class GaugeComponent implements OnInit, AfterViewInit, OnChanges {
         gaugeType: type.val,
         section: sections,
         area: areas,
+        size: this.size,
         titleString: this.title,
         unitString: this.unit,
         maxValue:Number(this.max),
