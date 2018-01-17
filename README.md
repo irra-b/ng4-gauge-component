@@ -69,7 +69,8 @@ imports: [
   unit:string Unit of gauge
   [uid]:string unique id of gauge
   min:number min value of gauge
-  max:number mas value of gauge
+  max:number max value of gauge
+  size:number size of gauge
   pointer_color:string 'red'|'green'|'blue'|'orange'|'yellow'|'cyan'|'magenta'|'white'|'gray'|'black'|'raith'
   pointer_type:string 'type1'|'type2'|'type3'|'type4'|'type5'|'type6'|'type7'|'type8'|'type9'|'type10'|'type11'|'type12'|'type13'|'type14'|'type15'|'type16'|
   threshold:number limit value for flashing led
